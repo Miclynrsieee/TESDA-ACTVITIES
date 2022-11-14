@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CWD</title>
+    </head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content=" IE=edge">
+    <meta name=" viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script>
+        // initialization of Floating Action Button
+        document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('.fixed-action-btn');
+          var instances = M.FloatingActionButton.init(elems, {
+          direction: 'top', hoverEnabled: false
+            });
+          //initialization of Side Nav Bar
+          var elems = document.querySelectorAll('.sidenav');
+          var instances = M.Sidenav.init(elems, screenLeft);
+          //initialization of Dropdown
+          var elems = document.querySelectorAll('.dropdown-trigger');
+          var instances = M.Dropdown.init(elems, {direction: 'bottom'});
+          //initialization of Materialboxed
+          var elems = document.querySelectorAll('.materialboxed');
+          var instances = M.Materialbox.init(elems, "right");
+          //initialization of Slider
+          var elems = document.querySelectorAll('.slider');
+          var instances = M.Slider.init(elems, "right");
+        });
+    </script>
+    
+    
+    <style>
+        .con2{
+            background-color: rgba(245, 245, 220, 0.26);
+            padding-left: 5%;
+            padding-right: 10%;
+        }
+        .con3{
+            padding-left: 5%;
+            padding-right: 10%;
+        }                        
+        .footer {
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(128, 128, 128, 0.308);
+            color: white;
+            text-align: left;
+        }     
+    </style>
+
+    <body style="background-image: url('images/bbg.png'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">  
+    
+        <section class="divider"> </section>
+        <div class="container">
+        <!-- Push and Pull-->
+        <blockquote><h4 class="white-text text-darken-1 "> Push and Pull </h4></blockquote>
+            <div class="row">
+                <div class="col s12 m5 l7 push-l5 card-panel light-blue lighten-1">
+                    <p class="flow-text">This div is 7-columns wide on pushed to the right by 5-columns.</p>
+                </div>
+                <div class="col hide-on-small-only m7 l5 pull-l7 card-panel light-blue lighten-3">
+                    <p class="flow-text">5-columns wide pulled to the left by 7-columns.</p>
+                </div>
+            </div>
+
+        </div>
+           
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
